@@ -1,7 +1,7 @@
 export default function Footer(){
     return (
-        <header className="flex p-2 bg">
-                <img src="bm.png"/>
-        </header>
+        <footer className="text-sm py-4 px-3 sm:text-lg bg-white border-t shadow-md flex justify-center">
+            <p>Derechos de autor &copy; {new Date().getFullYear()} BlockMaker Academy</p>
+        </footer> 
     )
 }
