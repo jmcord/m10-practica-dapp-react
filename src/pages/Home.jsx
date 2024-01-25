@@ -10,7 +10,6 @@ export default function Home() {
         <div>
             <h1>Home</h1>
             <div>Connected Wallet: {address}</div>
-            <LoadingSpinner className="w-20 h-20"/>
             <ErrorInfo message="Para mostrar errores" />
             <Button isLoading>Mi componente boton</Button>
         </div>
