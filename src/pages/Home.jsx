@@ -1,5 +1,6 @@
 import { useAccount } from "wagmi";
-import { LoadingSpinner, Button, ErrorInfo, TextInput } from '../components/ui';
+import { LoadingSpinner, Button, ErrorInfo, TextInput, Title } from '../components/ui';
+import { TokenBalance } from "../components";
 
 export default function Home() {
     const { address, isConnecting, isDisconnected } = useAccount();
@@ -13,6 +14,8 @@ export default function Home() {
             <Button isLoading>Boton</Button> 
             <ErrorInfo message="Para mostrar errores" />
             <TextInput />
+            <Title />
+            <TokenBalance />
         </div>
     )
 }
