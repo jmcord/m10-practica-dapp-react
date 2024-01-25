@@ -1,6 +1,6 @@
 import { useAccount } from "wagmi";
 import { LoadingSpinner, Button, ErrorInfo, TextInput, Title } from '../components/ui';
-import { TokenBalance } from "../components";
+import { TokenBalance, Owner } from "../components";
 
 export default function Home() {
     const { address, isConnecting, isDisconnected } = useAccount();
@@ -16,6 +16,7 @@ export default function Home() {
             <TextInput />
             <Title />
             <TokenBalance />
+            <Owner />
         </div>
     )
 }

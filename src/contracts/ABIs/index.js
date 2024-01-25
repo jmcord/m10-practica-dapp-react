@@ -1,2 +1,1 @@
-export const blockmakerTokenABI = [...
-]
+export * as blockmakerTokenABI from './blockmakerTokenABI';
