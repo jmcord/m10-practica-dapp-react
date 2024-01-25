@@ -1,5 +1,5 @@
 import { useAccount } from "wagmi";
-import { LoadingSpinner, Button } from '../components/ui';
+import { LoadingSpinner, Button, ErrorInfo } from '../components/ui';
 
 export default function Home() {
     const { address, isConnecting, isDisconnected } = useAccount();
@@ -11,7 +11,7 @@ export default function Home() {
             <h1>Home</h1>
             <div>Connected Wallet: {address}</div>
             <LoadingSpinner className="w-20 h-20"/>
-            <Button disabled>Mi componente boton</Button>
+            <ErrorInfo message="Para mostrar errores" />
             <Button isLoading>Mi componente boton</Button>
         </div>
     )
