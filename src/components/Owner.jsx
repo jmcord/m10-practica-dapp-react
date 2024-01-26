@@ -3,16 +3,18 @@ import { blockmakerTokenABI } from '../contracts/ABIs'
 import { Title } from './ui'
 
 export default function Owner() {
-  const { data } = useContractRead({
+  const result = useContractRead({
     abi: blockmakerTokenABI,
-    address: import.meta.env.VITE_TOKEN_CONTRACT_ADDRESS,
+    address: import.meta.env.VITE_CONTRACT_ADDRESS,
     functionName: 'owner'
   })
 
+  console.log('Resultado lectura owner', result)
+
   return (
-    <di className="bg-white p-4 border shadow rounded-md">
-      <Title>Owner</Title>
-      <p className="bg-gray-100 text-zinc-600 p-2 rounded-md text-sm">{data}</p>
-    </di>
+    <div className="bg-white p-4 border shadow rounded-md">
+      <h1>Owner</h1>
+      {result.data}
+    </div>
   )
 }
