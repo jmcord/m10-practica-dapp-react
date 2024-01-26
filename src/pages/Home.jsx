@@ -1,4 +1,4 @@
-import { TokenBalance, Owner } from '../components'
+import { TokenBalance, Owner, TokenInfo } from '../components'
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <h1>Home</h1>
       <TokenBalance />
       <Owner />
+      <TokenInfo />
     </div>
   )
 }

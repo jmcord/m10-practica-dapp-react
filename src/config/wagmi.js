@@ -1,6 +1,6 @@
 import { WagmiConfig, createConfig } from "wagmi";
 import { ConnectKitProvider, ConnectKitButton, getDefaultConfig } from "connectkit";
-import { goerli } from 'wagmi/chains'
+import { sepolia } from 'wagmi/chains'
 
 export const config = createConfig(
   getDefaultConfig({
@@ -10,7 +10,7 @@ export const config = createConfig(
 
     // Required
     appName: "BlockMaker ERC20 Dapp",
-    chains: [goerli]
+    chains: [sepolia]
   }),
 );
 

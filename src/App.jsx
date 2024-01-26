@@ -7,7 +7,7 @@ import { config } from './config/wagmi'
 
 function App() {
 
-  const walletConnectProjectId = import.meta.env.REACT_APP_WALLET_CONNECT_PROJECT_ID
+  const walletConnectProjectId = import.meta.env.VITE_WALLET_CONNECT_PROJECT_ID
   return (
     <WagmiConfig config={config}>
       <ConnectKitProvider mode='ligth'>
